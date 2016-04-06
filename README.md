@@ -1,4 +1,4 @@
-Nancy.ViewEngines.Razor.HtmlHelpers
+Nancy.ViewEngines.Razor.Html
 ===================================
 _A port of the ASP.NET MVC Razor helpers to #NancyFx_
 
@@ -22,7 +22,7 @@ There will be packages on NuGet as soon as all the basic helpers and Begin/Endfo
 Add:
 
 ```c#
-    @using Nancy.ViewEngines.Razor.HtmlHelpers;
+    @using Nancy.ViewEngines.Razor.Html;
 ```
   
 to your Razor views. You can probably do a web/app.config namespace import too.
@@ -31,8 +31,8 @@ to your Razor views. You can probably do a web/app.config namespace import too.
 
 ```c#
     @using System.Collections.Generic
-    @using Nancy.ViewEngines.Razor.HtmlHelpers
-    @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Nancy.ViewEngines.Razor.HtmlHelpers.TestApp.Model>
+    @using Nancy.ViewEngines.Razor.Html
+    @inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Nancy.ViewEngines.Razor.Html.TestApp.Model>
 
     @Html.TextBoxFor(x=>x.AString)
     @Html.TextBoxFor(x=>x.ABool)
